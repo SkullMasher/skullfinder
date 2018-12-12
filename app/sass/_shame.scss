@@ -1,8 +1,22 @@
 body {
-  background-color: $gray-900;
+  // background-color: $gray-900;
+}
+
+.nav-button {
+  display: none;
+  position: absolute;
+  padding: $spacer-medium;
+  z-index: 401;
 }
 
 #map {
   width: 100vw;
   height: 100vh;
+}
+
+.main-nav {
+  display: none;
+  position: absolute;
+  padding: $spacer-small;
+  z-index: 401;
 }

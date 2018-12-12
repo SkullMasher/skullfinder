@@ -13,7 +13,9 @@ const skullLatLng = [43.531127, 5.446]
 const markerText = 'Florian est à Aix en Provence !'
 
 let initMap = () => {
-  let map = L.map('map').setView(skullLatLng, 13);
+  let map = L.map('map',{
+    zoomControl: true
+  }).setView(skullLatLng, 13);
 
   L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
     attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
@@ -24,7 +26,19 @@ let initMap = () => {
     .openPopup()
 }
 
+let initNav = () => {
+  const btn = document.querySelector('.nav-button')
+  const nav = document.querySelector('.main-nav')
+
+  if (btn) {
+    btn.addEventListener('click', (event) => {
+      btn.classList.toggle('is-active')
+
+    })
+  }
+}
 document.addEventListener("DOMContentLoaded", (event) => {
   greetingMessage()
   initMap()
+  initNav()
 });

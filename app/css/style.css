@@ -2745,13 +2745,23 @@ button:focus {
   max-width: 620px;
 }
 
-body {
-  background-color: #212529;
+.nav-button {
+  display: none;
+  position: absolute;
+  padding: 2rem;
+  z-index: 401;
 }
 
 #map {
   width: 100vw;
   height: 100vh;
+}
+
+.main-nav {
+  display: none;
+  position: absolute;
+  padding: 1rem;
+  z-index: 401;
 }
 
 /*# sourceMappingURL=style.map.css */
