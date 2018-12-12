@@ -1,0 +1,49 @@
+{
+  "name": "npm_scripts",
+  "version": "1.0.0",
+  "description": "A set of npm_scripts",
+  "main": "index.js",
+  "scripts": {
+    "start": "node node_scripts/start.js",
+    "build": "node node_scripts/build.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SkullMasher/npm_scripts.git"
+  },
+  "keywords": [
+    "npm",
+    "scripts"
+  ],
+  "author": "Skullmasher",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SkullMasher/npm_scripts/issues"
+  },
+  "homepage": "https://github.com/SkullMasher/npm_scripts#readme",
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "bluebird": "^3.5.3",
+    "browser-sync": "^2.26.3",
+    "chalk": "^2.4.1",
+    "clean-css": "^4.2.1",
+    "dateformat": "^3.0.3",
+    "imagemin": "^6.0.0",
+    "imagemin-jpegtran": "^6.0.0",
+    "imagemin-optipng": "^6.0.0",
+    "imagemin-svgo": "^7.0.0",
+    "imagemin-webp": "^4.1.0",
+    "mkdirp": "^0.5.1",
+    "ncp": "^2.0.0",
+    "node-minify": "^3.6.0",
+    "node-sass": "^4.10.0",
+    "rmfr": "^2.0.0",
+    "susy": "^3.0.5",
+    "uglify-js": "^3.4.9"
+  },
+  "dependencies": {
+    "jquery": "^3.3.1",
+    "knacss": "^7.1.0",
+    "normalize.css": "^8.0.1"
+  }
+}

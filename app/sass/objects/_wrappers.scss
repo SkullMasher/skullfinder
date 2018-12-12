@@ -1,0 +1,14 @@
+$wrapper-width-small: 620px;
+$wrapper-width-default: 960px;
+
+.wrapper {
+  max-width: $wrapper-width-default;
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: $spacer-small;
+  padding-left: $spacer-small;
+}
+
+.wrapper--small {
+  max-width: $wrapper-width-small;
+}
