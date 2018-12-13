@@ -1,0 +1,22 @@
+body {
+  background-color: $gray-900;
+}
+
+.nav-button {
+  display: none;
+  position: absolute;
+  padding: $spacer-medium;
+  z-index: 401;
+}
+
+.map {
+  height: 70vh;
+  background-color: red;
+}
+
+.main-nav {
+  display: none;
+  position: absolute;
+  padding: $spacer-small;
+  z-index: 401;
+}

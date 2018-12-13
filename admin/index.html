@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="description" content="Où est Skullmasher ?">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Où est Skullmasher ?</title>
+  <link rel="stylesheet" type="text/css" href="js/vendor/leaflet/leaflet.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header>
+    <div class="wrapper mtm">
+      <h1>Skullfinder Admin</h1>
+    </div>
+  </header>
+  <main>
+    <div class="wrapper">
+      <div class="map" id="map"></div>
+    </div>
+    <div class="wrapper wrapper--small mtm">
+      <form>
+        <div class="flex-container mtm">
+          <div class="mrs">
+            <div>
+              <label for="latitude">Latitude</label>
+            </div>
+            <input type="number" name="latitude">
+          </div>
+          <div>
+            <div>
+              <label for="longitude">Longitude</label>
+            </div>
+            <input type="number" name="longitude">
+          </div>
+        </div>
+        <div class="mts">
+          <div>
+            <label for="markertext">Texte pour le marker</label>
+          </div>
+          <input type="text" name="markertext">
+        </div>
+      </form>
+    </div>
+  </main>
+  <script type="text/javascript" src="js/script.js"></script>
+  <script type="text/javascript" src="js/vendor/leaflet/leaflet.js"></script>
+</body>
+</html>
