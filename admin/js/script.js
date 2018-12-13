@@ -28,5 +28,5 @@ let initMap = () => {
 
 document.addEventListener("DOMContentLoaded", (event) => {
   greetingMessage()
-  // initMap()
+  initMap()
 });

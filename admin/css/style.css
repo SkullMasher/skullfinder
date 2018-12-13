@@ -2758,7 +2758,7 @@ body {
 
 .map {
   height: 70vh;
-  background-color: red;
+  background-color: #333;
 }
 
 .main-nav {
