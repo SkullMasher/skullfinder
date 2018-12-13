@@ -13,7 +13,16 @@ const greetingMessage = () => {
 let initMap = () => {
   const skullLatLng = [43.531127, 5.446]
   const markerText = 'Florian est à Aix en Provence !'
-  let $form = document.getElementById('formMarker')
+
+  let $formMarker = document.getElementById('formMarker')
+  let $inputLat = $formMarker[0]
+  let $inputLng = $formMarker[1]
+  let $inputText = $formMarker[2]
+  let $inputSubmit = $formMarker[3]
+
+  $inputLat.value = skullLatLng[0]
+  $inputLng.value = skullLatLng[1]
+  $inputText.value = markerText
 
   let map = L.map('map',{
     zoomControl: true
@@ -29,6 +38,8 @@ let initMap = () => {
 
   map.on('click', (e) => {
     skullMarker.setLatLng(e.latlng)
+    $inputLat.value = e.latlng.lat
+    $inputLng.value = e.latlng.lng
   });
 }
 
