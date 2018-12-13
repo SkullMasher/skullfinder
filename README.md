@@ -7,7 +7,7 @@ https://skullmasher.io/skullfinder
 Parce qu'on me demande souvent **"Tu es ou Flo ?"**. Mais surtout parce que j'ai envie de créer une application !
 
 # Route de développement (Roadmap)
-  - Une interface admin qui permet de changer les informations du marqueur
+  - ~~Une interface admin qui permet de changer les informations du marqueur~~
   - Créer une base couchDB pour synchroniser l'application
   - demander au front de se synchroniser à la base avec my man *pouchDB*
   - Installer Cordova dans le dossier app pour avoir une appli Android et un site web avec le même code je crois que c'est possible info pas sûr.
