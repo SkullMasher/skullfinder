@@ -9,6 +9,35 @@ const greetingMessage = () => {
   console.log('  # # #   ')
 }
 
+let isNumeric = (n) => {
+  return !isNaN(parseFloat(n)) && isFinite(n)
+}
+
+const dbName = 'skullfinder_marker'
+const remoteDbURL = 'http://127.0.0.1:5984/'
+
+var sync = PouchDB.sync(dbName, remoteDbURL, {
+  live: true,
+  retry: true
+}).on('change', (info) => {
+  // handle change
+  console.log('Change Information : ', info)
+}).on('paused', (err) => {
+  // replication paused (e.g. replication up to date, user went offline)
+  console.log('Paused err : ', err)
+}).on('active', () => {
+  // replicate resumed (e.g. new changes replicating, user went back online)
+  console.log('Active')
+}).on('denied', (err) => {
+  // a document failed to replicate (e.g. due to permissions)
+  console.log('Denied : ', err)
+}).on('complete', (info) => {
+  // handle complete
+  console.log('Complete info : ', info)
+}).on('error', (err) => {
+  // handle error
+  console.log('err : ', err)
+})
 
 let initMap = () => {
   const skullLatLng = [43.531127, 5.446]
@@ -24,9 +53,9 @@ let initMap = () => {
   $inputLng.value = skullLatLng[1]
   $inputText.value = markerText
 
-  let map = L.map('map',{
+  let map = L.map('map', {
     zoomControl: true
-  }).setView(skullLatLng, 13);
+  }).setView(skullLatLng, 13)
 
   L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
     attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
@@ -40,10 +69,10 @@ let initMap = () => {
     skullMarker.setLatLng(e.latlng)
     $inputLat.value = e.latlng.lat
     $inputLng.value = e.latlng.lng
-  });
+  })
 }
 
-document.addEventListener("DOMContentLoaded", (event) => {
+document.addEventListener('DOMContentLoaded', (event) => {
   greetingMessage()
   initMap()
-});
+})

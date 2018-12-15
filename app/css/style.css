@@ -2753,7 +2753,6 @@ button:focus {
 }
 
 #map {
-  width: 100vw;
   height: 100vh;
 }
 
@@ -2762,6 +2761,34 @@ button:focus {
   position: absolute;
   padding: 1rem;
   z-index: 401;
+}
+
+.flex-container-center {
+  display: flex;
+  justify-content: center;
+}
+
+.infobox {
+  max-width: 600px;
+  position: absolute;
+  z-index: 401;
+  bottom: 0;
+  margin-bottom: 4rem;
+  padding: 1rem;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 0px 6px rgba(50, 50, 93, 0.9);
+  animation: slideInUp 1s;
+}
+
+@keyframes slideInUp {
+  from {
+    transform: translate3d(0, 100%, 0);
+    visibility: visible;
+  }
+  to {
+    transform: translate3d(0, 0, 0);
+  }
 }
 
 /*# sourceMappingURL=style.map.css */

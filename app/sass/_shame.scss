@@ -10,7 +10,6 @@ body {
 }
 
 #map {
-  width: 100vw;
   height: 100vh;
 }
 
@@ -20,3 +19,33 @@ body {
   padding: $spacer-small;
   z-index: 401;
 }
+
+.flex-container-center {
+  display: flex;
+  justify-content: center;
+}
+
+.infobox {
+  max-width: 600px;
+  position: absolute;
+  z-index: 401;
+  bottom: 0;
+  margin-bottom: $spacer-large;
+  padding: $spacer-small;
+  background-color: $white;
+  border-radius: 5px;
+  box-shadow: 0 0px 6px rgba(50, 50, 93, .9);
+  animation: slideInUp 1s;
+}
+
+@keyframes slideInUp {
+  from {
+    transform: translate3d(0, 100%, 0);
+    visibility: visible;
+  }
+
+  to {
+    transform: translate3d(0, 0, 0);
+  }
+}
+
