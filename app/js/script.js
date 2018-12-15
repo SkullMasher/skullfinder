@@ -25,9 +25,7 @@ let initMap = () => {
     attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
   }).addTo(map)
 
-  // L.marker(skullLatLng).addTo(map)
-  //   .bindPopup(markerText)
-  //   .openPopup()
+  L.marker(paris).addTo(map)
 
   let line = new L.Polyline(skullOnRoad, {
     color: 'red',
