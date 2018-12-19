@@ -6,6 +6,7 @@
   "scripts": {
     "start": "node node_scripts/start.js",
     "devadmin": "node node_scripts/devadmin.js",
+    "devapp": "node node_scripts/devadmin.js",
     "build": "node node_scripts/build.js"
   },
   "repository": {

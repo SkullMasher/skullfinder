@@ -2,6 +2,11 @@ body {
   background-color: $gray-900;
 }
 
+.flex-conatiner-space-around {
+  display: flex;
+  justify-content: space-around;
+}
+
 .nav-button {
   display: none;
   position: absolute;
@@ -10,7 +15,7 @@ body {
 }
 
 .map {
-  height: 70vh;
+  height: 60vh;
   background-color: $gray-800;
 }
 

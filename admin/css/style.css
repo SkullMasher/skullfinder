@@ -2725,6 +2725,18 @@ button:focus {
   color: #5CB85C;
 }
 
+.color--warn {
+  color: #F0AD4E;
+}
+
+.color--error {
+  color: #D9534F;
+}
+
+.color--muted {
+  color: #e7e9ed;
+}
+
 .background--gray100 {
   background-color: #f8f9fa;
 }
@@ -2749,6 +2761,11 @@ body {
   background-color: #212529;
 }
 
+.flex-conatiner-space-around {
+  display: flex;
+  justify-content: space-around;
+}
+
 .nav-button {
   display: none;
   position: absolute;
@@ -2757,7 +2774,7 @@ body {
 }
 
 .map {
-  height: 70vh;
+  height: 60vh;
   background-color: #333;
 }
 

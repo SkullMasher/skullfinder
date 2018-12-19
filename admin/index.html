@@ -15,35 +15,50 @@
     </div>
   </header>
   <main>
+    <div class="wrapper wrapper--small">
+      <div class="js-fastmarkers mbm">
+        <h3>Fast markers update</h3>
+        <p>Tap buttons to update marker location</p>
+        <p class="js-feedbackText"></p>
+        <div class="flex-conatiner-space-around">
+          <button class="btn--primary" data-markername="paris">Paris</button>
+          <button class="btn--primary" data-markername="aix">Aix en Provence</button>
+        </div>
+      </div>
+    </div>
     <div class="wrapper">
       <div class="map" id="map"></div>
     </div>
     <div class="wrapper wrapper--small mtm">
-      <form id="formMarker">
-        <div class="flex-container mtm">
-          <div class="mrs">
-            <div>
-              <label for="latitude">Latitude</label>
+      <div>
+        <h3>Create regular or temporary location</h3>
+        <form id="formMarker">
+          <p>This is where I draw the error handling</p>
+          <div class="flex-container mtm">
+            <div class="mrs">
+              <div>
+                <label for="latitude">Latitude</label>
+              </div>
+              <input type="number" step="0.000000000000001" name="latitude">
             </div>
-            <input type="number" name="latitude">
-          </div>
-          <div>
             <div>
-              <label for="longitude">Longitude</label>
+              <div>
+                <label for="longitude">Longitude</label>
+              </div>
+              <input type="number" step="0.000000000000001" name="longitude">
             </div>
-            <input type="number" name="longitude">
           </div>
-        </div>
-        <div class="mts">
-          <div>
-            <label for="markertext">Texte pour le marker</label>
+          <div class="mts">
+            <div>
+              <label for="markertext">Texte pour le marker</label>
+            </div>
+            <input class="w250p" type="text" name="markertext">
           </div>
-          <input class="w250p" type="text" name="markertext">
-        </div>
-        <div class="mtm mbm center">
-          <input class="btn btn--primary" type="submit" value="Update Skull location">
-        </div>
-      </form>
+          <div class="mtm mbm">
+            <input class="btn btn--primary" type="submit" value="Update Skull location">
+          </div>
+        </form>
+      </div>
     </div>
   </main>
   <script type="text/javascript" src="js/vendor/pouchdb/pouchdb-7.0.0.min.js"></script>

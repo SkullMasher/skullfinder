@@ -1,6 +1,0 @@
-{
-  "database": {
-    "remote" : "http://127.0.0.1:5984/skullfinder_marker",
-    "localDbName" : "skullfinder_marker"
-  }
-}
